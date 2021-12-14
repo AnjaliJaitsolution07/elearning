@@ -95,6 +95,7 @@
   <h1 class="text-center">Popular Course</h1>
   <!---Start Most Popular Course 1st Card Deck-->
   <div class="card-deck mt-4">
+  <div class="card-group">
     <a href="#" class="btn" style="text-align: left; padding:0px; margin:0px;">
       <div class="card">
         <image src="images/courseimg/Guitar.jpg" class="card-img-top" alt="Guitar" />
@@ -108,7 +109,7 @@
              Minus reiciendis architecto suscipit. Facilis, nemo.</p>
         </div>
         <div class="card-footer">
-          <p class="card-text d-inline">Price. <small><del> 2000
+          <p class="card-text d-inline">Price: <small><del> 2000
             
           </del></small>
           <span class="font-weight-bolder"> &#8377 200</span></p>
@@ -139,7 +140,7 @@
       </div>
    
       <div class="card">
-        <image src="images/courseimg/Guitar.jpg" class="card-img-top" alt="Guitar" />
+           <image src="images/courseimg/Guitar.jpg" class="card-img-top" alt="Guitar" />
 
         <div class="card-body">
           <h5 class="card-title">Learn Guitar Easy Way</h5>
@@ -159,10 +160,12 @@
         </div>
       </div>
     </a>
+</div>
   </div>
    <!---end Most Popular Course 1st Card Deck-->
    <!---Start Most Popular Course 2st Card Deck-->
   <div class="card-deck mt-4">
+    <div class="card-group">
     <a href="#" class="btn" style="text-align: left; padding:0px; margin:0px;">
       <div class="card">
         <image src="images/courseimg/Python.svg.png" class="card-img-top" alt="Python" />
@@ -183,6 +186,47 @@
         </div>
       </div>
     </a>
+    <a href="#" class="btn" style="text-align: left; padding:0px; margin:0px;">
+      <div class="card">
+        <image src="images/courseimg/Python.svg.png" class="card-img-top" alt="Python" />
+
+        <div class="card-body">
+          <h5 class="card-title">Learn Python</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur 
+            adipisicing elit. impedit sunt, suscipit asperiores unde.
+             Minus reiciendis architecto suscipit. Facilis, nemo.</p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text d-inline">Price. <small><del> 2000
+            
+          </del></small>
+          <span class="font-weight-bolder"> &#8377 200</span></p>
+          <a class="btn btn-primary text-white font-weight-bolder float-fight" 
+            href="#">Enroll</a>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="btn" style="text-align: left; padding:0px; margin:0px;">
+      <div class="card">
+        <image src="images/courseimg/Python.svg.png" class="card-img-top" alt="Python" />
+
+        <div class="card-body">
+          <h5 class="card-title">Learn Python</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur 
+            adipisicing elit. impedit sunt, suscipit asperiores unde.
+             Minus reiciendis architecto suscipit. Facilis, nemo.</p>
+        </div>
+        <div class="card-footer">
+          <p class="card-text d-inline">Price. <small><del> 2000
+            
+          </del></small>
+          <span class="font-weight-bolder"> &#8377 200</span></p>
+          <a class="btn btn-primary text-white font-weight-bolder float-fight" 
+            href="#">Enroll</a>
+        </div>
+      </div>
+    </a>
+</div>
   </div>
    <!---end Most Popular Course 2nd Card Deck-->
    <div class="text-center m-2">
@@ -190,6 +234,35 @@
    </div>
 </div>
 <!-------End Most Popular Course -->
+
+<!------Start Contact Us--------->
+<div class="container mt-4" id="Contact">
+  <!------Start Contact Us Container-------->
+  <h2 class="text-center mb-4">Contact US</h2>
+  <!------Contact Us Heading-------->
+  <div class="row"> <!------Start Contact Us Row-------->
+    <div class="col-md-8">  <!------Start Contact Us 1st Column-------->
+      <form action="" method="post">
+        <input type="text" class="form-control" name="name" placeholder="Name"><br>
+        <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
+        <input type="email" class="form-control" name="emaul" placeholder="E-mail"><br>
+        <textarea class="form-control" name="message" placeholder="How can we help you?" style="height: 150px;"></textarea><br>
+        <input type="submit" class="btn btn-primary" name="submit" value="Send"><br><br>
+      </form>
+    </div> <!------End Contact Us 1st Column----->
+
+    <div class="col-md-4 stripe text-white text-center"><!------Start Contact Us
+     2nd Column----->
+      <h4>SmartTech</h4>
+      <p>SmartTech, Near GHantaghar, Birgunj
+        Province Two-44300<br>
+        Phone: +9774545454545<br>
+        www.smarttech.com
+      </p>
+    </div><!------End Contact Us 2nd Column----->
+  </div><!------End Contact Us Row-------->
+</div><!------End Contact Us Container-------->
+<!------End of Contact Us-------->
 
 
 <!----jquery and Bootstrap Javascript---->
