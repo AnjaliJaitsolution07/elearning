@@ -36,12 +36,14 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <ul class="navbar-nav custom-nav pl-5" >
         <li class="nav-item custom-nav-item"><a href="index.php" class="nav-link">Home</a></li>
-        <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Courses</a></li>
+        <li class="nav-item custom-nav-item"><a href="courses.php" class="nav-link">Courses</a></li>
         <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Payment</a></li>
         <li class="nav-item custom-nav-item"><a href="#" class="nav-link">My Profile</a></li>
         <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Logout</a></li>
-        <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Login </a></li>
-        <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Signup</a></li>
+        <li class="nav-item custom-nav-item"><a href="#" class="nav-link" 
+        data-bs-toggle="modal" data-bs-target="#stuLoginModalCenter">Login </a></li>
+        <li class="nav-item custom-nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" 
+        data-bs-target="#stuRegModalCenter">Signup</a></li>
         <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Feedback</a></li>
       </ul>
     </div>
@@ -61,7 +63,8 @@
     <div class="vid-content">
       <h1 class="my-content">Welcome to SmartTech</h1>
       <small class="my-content">Learn and Implements</small><br/>
-      <a href="#" class="btn btn-danger">Get started</a>
+      <a href="#" class="btn btn-danger"  data-bs-toggle="modal" 
+      data-bs-target="#stuRegModalCenter">Get started</a>
     </div>
 </div>
 <!----End Video background-------->
@@ -236,33 +239,245 @@
 <!-------End Most Popular Course -->
 
 <!------Start Contact Us--------->
-<div class="container mt-4" id="Contact">
-  <!------Start Contact Us Container-------->
-  <h2 class="text-center mb-4">Contact US</h2>
-  <!------Contact Us Heading-------->
-  <div class="row"> <!------Start Contact Us Row-------->
-    <div class="col-md-8">  <!------Start Contact Us 1st Column-------->
-      <form action="" method="post">
-        <input type="text" class="form-control" name="name" placeholder="Name"><br>
-        <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
-        <input type="email" class="form-control" name="emaul" placeholder="E-mail"><br>
-        <textarea class="form-control" name="message" placeholder="How can we help you?" style="height: 150px;"></textarea><br>
-        <input type="submit" class="btn btn-primary" name="submit" value="Send"><br><br>
-      </form>
-    </div> <!------End Contact Us 1st Column----->
-
-    <div class="col-md-4 stripe text-white text-center"><!------Start Contact Us
-     2nd Column----->
-      <h4>SmartTech</h4>
-      <p>SmartTech, Near GHantaghar, Birgunj
-        Province Two-44300<br>
-        Phone: +9774545454545<br>
-        www.smarttech.com
-      </p>
-    </div><!------End Contact Us 2nd Column----->
-  </div><!------End Contact Us Row-------->
-</div><!------End Contact Us Container-------->
+<?php
+  include ('./contact.php');
+?>
 <!------End of Contact Us-------->
+
+
+<!-- Start Students Testimonial ---->
+<div class="container-fluid mt-5" style="background-color: #4B7289" id="Feedback">
+  <h1 class="text-center testyheading p-4">Student's Feedback</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="testimonial-slider" class="owl-carousel">
+        <div class="testimonial">
+          <p class="description">
+            Lorem ipsum dolar sit amet consectetur adipisicing elit.
+            Expendita, dignissimos blanditiis.
+          </p>
+          <diV class="pic">
+            <img src="images/stu/student2.jpg" alt=""/>
+          </diV>
+          <div class="testimoinal prof">
+            <h4>Sonam</h4>
+            <small>Web Developer</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end Students Testimonial ---->
+
+<!------start Social zFollow------------>
+<div class="container-fluid bg-danger">
+  <div class="row text-white text-center p-1">
+    <div class="col-sm">
+      <a class="text-white social-hover" href="#"><i class="fab 
+      fa-facebook-f"></i>Facebook</a>
+    </div>
+    <div class="col-sm">
+      <a class="text-white social-hover" href="#"><i class="fab 
+      fa-twitter"></i>Twitter</a>
+    </div>
+    <div class="col-sm">
+      <a class="text-white social-hover" href="#"><i class="fab 
+      fa-whatsapp"></i>Whatsapp</a>
+    </div>
+    <div class="col-sm">
+      <a class="text-white social-hover" href="#"><i class="fab 
+      fa-facebook-f"></i>facebook</a>
+    </div>
+    <div class="col-sm">
+      <a class="text-white social-hover" href="#"><i class="fab 
+      fa-instagram"></i>Instagram</a>
+    </div>
+  </div>
+</div>
+<!------end Social zFollow------------>
+
+<!------Start About Section------------>
+<div class="container-fluid p-4" style="background-color: #E9ECEF">
+  <div class="container" style="background-color: #E9ECEF">
+    <div class="row text-center">
+      <div class="col-sm">
+        <h5>About Us</h5>
+        <p>SmartTech provides access to the best education, partnering with top school 
+          and organizations to offer courses online.
+        </p>
+      </div>
+      <div class="col-sm">
+        <h5>Category</h5>
+        <a class="text-dark" href="#">Web Development</a><br/>
+        <a class="text-dark" href="#">Web Desining</a><br/>
+        <a class="text-dark" href="#">Android App Dev</a><br/>
+        <a class="text-dark" href="#">iOS Development</a><br/>
+        <a class="text-dark" href="#">Data Analysis</a><br/>
+        <a class="text-dark" href="#">Web Development</a><br/>
+      </div>
+      <div class="col-sm">
+        <h5>Contact Us</h5>
+        <p>SmartTech Pvt Ltd <br> Birgunj, Nepal<br> Ph. 00000000000</p>
+      </div>
+    </div>
+  </div>
+</div><!------End About Section------------>
+
+<!------Start Footer------------>
+<footer class="container-fluid bg-dark text-center p-2">
+  <small class="text-white">
+    Copyright &copy; 2021 || Designed By E-Learning ||<a href="#login" 
+    data-bs-toggle="modal" data-bs-target="#stuLoginModalCenter">Admin Login</a>
+  </small>
+</footer>
+<!------End Footer------------>
+
+
+<!------Start Student registration Modal------------>
+
+<!-- Modal -->
+<div class="modal fade" id="stuRegModalCenter" tabindex="-1" 
+aria-labelledby="stuRegModalCenterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="stuRegModalCenterLabel">Student Registration</h5>
+        <button type="button" class="btn-close" 
+        data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <!---------Start Student Registration form---------->       
+        <form>
+          <div class="form-group">
+            <i class="fas fa-user"></i>
+            <label for="stuname" class="pl-2 font-weight-bold">Name</label>
+            <input type="text" class="form-control" id="stuname" placeholder="Name"
+            name="stuname">
+          </div>
+          <div class="form-group">
+            <i class="fas fa-address-book"></i>
+            <label for="address" class="pl-2 font-weight-bold">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Address"
+            name="address">
+          </div>
+          <div class="form-group">
+            <i class="fas fa-book"></i>
+            <label for="course" class="pl-2 font-weight-bold">Courses</label>
+            <input type="text" class="form-control" id="course" placeholder="Courses"
+            name="course">
+          </div>
+          <div class="form-group">
+            <i class="fas fa-phone"></i>
+            <label for="contactnum" class="pl-2 font-weight-bold">Contact Number(Whatsapp)</label>
+            <input type="text" class="form-control" id="contactnum" placeholder="Whatsapp Number"
+            name="contactnum">
+          </div>         
+          <div class="form-group">
+            <i class="fas fa-envelope"></i>
+            <label for="stuemail" class="pl-2 font-weight-bold">Email</label>
+            <input type="email" class="form-control" id="stuemail" placeholder="Email"
+            name="stuemail">
+            <small class="form-text">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-key"></i>
+            <label for="stupass" class="pl-2 font-weight-bold">New Password</label>
+            <input type="password" class="form-control" id="stupass" placeholder="Password"
+            name="stupass">
+          </div>         
+        </form>
+        <!---------End Student Registration form---------->
+
+     </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Clos</button>
+        <button type="button" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!------END Student registration Modal------------>
+
+<!------Start Student Login Modal------------>
+<!-- Modal -->
+<div class="modal fade" id="stuLoginModalCenter" tabindex="-1" 
+aria-labelledby="stuLoginModalCenterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="stuLoginModalCenterLabel">Student Login</h5>
+        <button type="button" class="btn-close" 
+        data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <!---------Start Student Login form---------->       
+        <form id="stuLoginForm">        
+          <div class="form-group">
+            <i class="fas fa-envelope"></i>
+            <label for="stuLogmail" class="pl-2 font-weight-bold">Email</label>
+            <input type="email" class="form-control" id="stuLogmail" placeholder="Email"
+            name="stuLogemail">
+          </div>
+          <div class="form-group">
+            <i class="fas fa-key"></i>
+            <label for="stuLogpass" class="pl-2 font-weight-bold">Password</label>
+            <input type="password" class="form-control" id="stuLogpass" placeholder="Password"
+            name="stuLogpass">
+          </div>         
+        </form>
+        <!---------End Student Login form---------->
+
+     </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</button>
+        <button type="button" class="btn btn-primary" id="stuLoginBtn">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!------END Student Login Modal------------>
+
+<!------Start Admin Login Modal------------>
+<!-- Modal -->
+<div class="modal fade" id="adminLoginModalCenter" tabindex="-1" 
+aria-labelledby="adminLoginModalCenterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="adminLoginModalCenterLabel">Admin Login</h5>
+        <button type="button" class="btn-close" 
+        data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <!---------Start Admin Login form---------->       
+        <form id="adminLoginForm">        
+          <div class="form-group">
+            <i class="fas fa-envelope"></i>
+            <label for="adminLogmail" class="pl-2 font-weight-bold">Email</label>
+            <input type="email" class="form-control" id="adminLogmail" placeholder="Email"
+            name="adminLogemail">
+          </div>
+          <div class="form-group">
+            <i class="fas fa-key"></i>
+            <label for="adminLogpass" class="pl-2 font-weight-bold">Password</label>
+            <input type="password" class="form-control" id="adminLogpass" placeholder="Password"
+            name="adminLogpass">
+          </div>         
+        </form>
+        <!---------End Admin Login form---------->
+
+     </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</button>
+        <button type="button" class="btn btn-primary" id="adminLoginBtn">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!------END Admin Login Modal------------>
+
+
 
 
 <!----jquery and Bootstrap Javascript---->
@@ -272,6 +487,10 @@
 
  <!----Font awesome js---->
 <script src="js/all.min.js"></script>
+
+<!----Student Testimonial Owl Slider jS----------->
+<script type="text/javascript" src="js/owl.min.js"></script>
+<script type="text/javascript" src="js/testyslider.js"></script>
 
 </body>
 
