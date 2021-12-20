@@ -21,7 +21,7 @@ include('./mainINclude/header.php');
   <!---Start  Popular Course 1st Card Deck-->
   <div class="card-deck mt-4">
   <div class="card-group">
-    <a href="#" class="btn" style="text-align: left; padding:0px; margin:0px;">
+    <a href="" class="btn" style="text-align: left; padding:0px; margin:0px;">
       <div class="card">
         <image src="images/courseimg/Guitar.jpg" class="card-img-top" alt="Guitar" />
 
@@ -39,7 +39,7 @@ include('./mainINclude/header.php');
           </del></small>
           <span class="font-weight-bolder"> &#8377 200</span></p>
           <a class="btn btn-primary text-white font-weight-bolder float-fight" 
-            href="#">Enroll</a>
+            href="couresedetails.php">Enroll</a>
         </div>
       </div>
     
