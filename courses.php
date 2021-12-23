@@ -39,7 +39,7 @@ include('./mainINclude/header.php');
           </del></small>
           <span class="font-weight-bolder"> &#8377 200</span></p>
           <a class="btn btn-primary text-white font-weight-bolder float-fight" 
-            href="couresedetails.php">Enroll</a>
+            href="coursedetails.php">Enroll</a>
         </div>
       </div>
     

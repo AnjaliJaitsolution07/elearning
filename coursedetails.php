@@ -13,30 +13,57 @@ include('./mainINclude/header.php');
     </div>
 </div>
 <!----------End Course Page Banner-------->
+<br>
 
 <!-----------Start Main Content---------->
-<div class="container">
-    <h2 class="text-center my-4">Payment Status </h2>
-    <form method="post" action="">
-        <div class="form-group row">
-            <label class="offset-sm-3 col-form-label">Order ID: </label>
-            <div>
-                <input type="text" class="form-control my-3">
-            </div>
-            <div>
-                <input type="submit" class="btn btn-primary my-4" value="View">
+<div class="container mt -5">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="./images/courseimg/Guitar.jpg" class="card-img-top"
+            alt="Guitar"/>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Course Name: Learn Guitar</h5>
+                <p class="card-text">Description: Lorem ipsum dolar sit amet
+                    consectetur adipisicing elit. Nostrum, provident.
+                </p>
+                <p class="card-text">Duration: 10 days</p>
+                <form action="" method="post">
+                    <p class="card-text d-inline">Price: <small><del>&#8377 2000</del>
+                        </small>
+                        <span class="font-weight-bolder">&#8377 2000</span>
+                    </p>
+                    <button type="submit" class="btn btn-primary text-white
+                     font-weight-bolder float-right" name="buy">Buy Now</button>
+                </form>
             </div>
         </div>
-    </form>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Lesson No.</th>
+                        <th scope="col">Lesson Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Introduction</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 <!-----------End Main Content---------->
 
 
-<!-----------Start Contact Us---------->
 
-<?php
-  include ('./contact.php');
-?>
 
 <!-----------End Contact Us---------->
 <h1>Payment Page</h1>
