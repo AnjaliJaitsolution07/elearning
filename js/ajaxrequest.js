@@ -26,7 +26,7 @@ $(document).ready(function(){
                     $("#statusMsg4").html(
                         '<small style="color:red;">Please Enter valid Email e.g. example@gmail.com  !</small>'
                     );
-                    $("#signup").attr("disabled", true);
+                    $("#signup").attr("disabled", false);
                 }
             },
         });
@@ -121,4 +121,35 @@ function clearStuRegField(){
     $("#statusMsg4").html(" ");
     $("#statusMsg5").html(" ");
     
+}
+
+/// Ajax Call for student login Verification
+function checkStuLogin() {
+    var stuLogEmail = $("#stuLogmail").val();
+    var stuLogPass = $("#stuLogpass").val();
+    $.ajax({
+        url: "Student/addstudent.php",
+        method: "POST",
+        data: {
+            checkLogemail: "checklogemail",
+            stuLogEmail: stuLogEmail,
+            stuLogPass: stuLogPass,
+        },
+        success : function (data) {
+            //console.log(data);
+            if(data == 0){
+                $("#statusLogMsg").html(
+                    '<small class="alert alert-danger">Invalid Email ID or Password !</small>'
+                );
+            }else if(data == 1){
+                $("#statusLogMsg").html(
+                    '<div class="spinner-border text-success" role="status"></div>'
+                );
+                setTimeout(() => {
+                    window.location.href = "index.php";
+                }, 1000);
+            }
+        },
+    });
+
 }

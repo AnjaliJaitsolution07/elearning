@@ -2,7 +2,7 @@
 <footer class="container-fluid bg-dark text-center p-2">
   <small class="text-white">
     Copyright &copy; 2021 || Designed By E-Learning ||<a href="#login" 
-    data-bs-toggle="modal" data-bs-target="#stuLoginModalCenter">Admin Login</a>
+    data-bs-toggle="modal" data-bs-target="#adminLoginModalCenter">Admin Login</a>
   </small>
 </footer>
 <!------End Footer------------>
@@ -70,7 +70,8 @@ aria-labelledby="stuLoginModalCenterLabel" aria-hidden="true">
 
      </div>
       <div class="modal-footer">
-      <button type="button" class="btn btn-primary" id="stuLoginBtn" onclick="checkLogin()">Login</button>
+        <small id="statusLogMsg"></small>
+      <button type="button" class="btn btn-primary" id="stuLoginBtn" onclick="checkStuLogin()">Login</button>
       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</button>
         
       </div>
@@ -110,8 +111,10 @@ aria-labelledby="adminLoginModalCenterLabel" aria-hidden="true">
 
      </div>
       <div class="modal-footer">
+      <small id="statusAdminLogMsg"></small>
+      <button type="button" class="btn btn-primary" id="adminLoginBtn" onclick="checkAdminLogin()">Login</button>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</button>
-        <button type="button" class="btn btn-primary" id="adminLoginBtn">Login</button>
+        
       </div>
     </div>
   </div>
@@ -135,6 +138,11 @@ aria-labelledby="adminLoginModalCenterLabel" aria-hidden="true">
 -->
 <!----Student Ajax Call JavaScript---->
 <script type="text/javascript" src="js/ajaxrequest.js"></script>
+
+<!----Admin Ajax Call JavaScript---->
+<script type="text/javascript" src="adminajaxrequest.js"></script>
+
+
 
 
 </body>

@@ -16,8 +16,16 @@ include('./mainINclude/header.php');
     <div class="vid-content">
       <h1 class="my-content">Welcome to SmartTech</h1>
       <small class="my-content">Learn and Implements</small><br/>
-      <a href="#" class="btn btn-danger"  data-bs-toggle="modal" 
-      data-bs-target="#stuRegModalCenter">Get started</a>
+      <?php
+        if(!isset($_SESSION['is_login'])){
+          echo '<a href="#" class="btn btn-danger mt-3"  data-bs-toggle="modal" 
+          data-bs-target="#stuRegModalCenter">Get started</a>';
+        }else {
+          echo '<a href="#" class="btn btn-primary mt-3">My Profile</a>';
+        }
+      ?>
+      
+      
     </div>
 </div>
 <!----End Video background-------->
@@ -280,6 +288,5 @@ include('./mainINclude/header.php');
 <!---------- Satrt Including Footer--------->
 <?php
 include('./mainINclude/footer.php');
-
 ?>
 <!---------- End Including Footer--------->
