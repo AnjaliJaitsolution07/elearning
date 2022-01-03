@@ -1,7 +1,7 @@
 /// Ajax Call for admindent login Verification
 function checkAdminLogin() {
     //console.log("Button Clicked");
-    var adminLogEmail = $("#adminLogmail").val();
+    var adminLogEmail = $("#adminLogemail").val();
     var adminLogPass = $("#adminLogpass").val();
     $.ajax({
         url: "Admin/admin.php",
@@ -12,7 +12,7 @@ function checkAdminLogin() {
             adminLogPass: adminLogPass,
         },
         success : function (data) {
-            //console.log(data);
+           // console.log(data);
             if(data == 0){
                 $("#statusAdminLogMsg").html(
                     '<small class="alert alert-danger">Invalid Email ID or Password !</small>'

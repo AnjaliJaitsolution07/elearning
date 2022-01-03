@@ -96,8 +96,8 @@ aria-labelledby="adminLoginModalCenterLabel" aria-hidden="true">
         <form id="adminLoginForm">        
           <div class="form-group">
             <i class="fas fa-envelope"></i>
-            <label for="adminLogmail" class="pl-2 font-weight-bold">Email</label>
-            <input type="email" class="form-control" id="adminLogmail" placeholder="Email"
+            <label for="adminLogemail" class="pl-2 font-weight-bold">Email</label>
+            <input type="email" class="form-control" id="adminLogemail" placeholder="Email"
             name="adminLogemail">
           </div>
           <div class="form-group">
@@ -140,7 +140,7 @@ aria-labelledby="adminLoginModalCenterLabel" aria-hidden="true">
 <script type="text/javascript" src="js/ajaxrequest.js"></script>
 
 <!----Admin Ajax Call JavaScript---->
-<script type="text/javascript" src="adminajaxrequest.js"></script>
+<script type="text/javascript" src="js/adminajaxrequest.js"></script>
 
 
 

@@ -2,7 +2,7 @@
 if(!isset($_SESSION)){
     session_start();
 }
-include('./dbConnection.php');
+include('C:\xampp\htdocs\elearning\dbConnection.php');
 
 /// Admin Login verification
 if(!isset($_SESSION['is_admin_login'])){
